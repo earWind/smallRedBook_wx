@@ -1,2 +1,44 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class="page-container">
+	<view class="top-info">
+		<view class="self-info">
+			<van-image class="avatar" round width="172rpx" height="172rpx" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+			<view class="data">
+				<view class="top-count">
+					<view class="item">
+						<text>0</text>
+						<text>关注</text>
+					</view>
+					<view class="item">
+						<text>0</text>
+						<text>粉丝</text>
+					</view>
+					<view class="item">
+						<text>0</text>
+						<text>获赞与收藏</text>
+					</view>
+				</view>
+				<view class="bottom-btns">
+					<van-button type="default" class="edit">编辑资料</van-button>
+					<van-button type="default" class="set">
+						<van-icon name="setting-o" />
+					</van-button>
+				</view>
+			</view>
+		</view>
+		<view class="self-bsc">
+			<image class="sex" src="../../static/images/male.png"></image>
+			<text class="split">|</text>
+			<text>地球的某一块红薯地</text>
+			<text class="split">|</text>
+			<text class="join-vip">R加入小红卡会员></text>
+		</view>
+		<van-tabs active="{{ active }}" bind:change="onChange">
+			<van-tab title="笔记"></van-tab>
+			<van-tab title="收藏"></van-tab>
+		</van-tabs>
+	</view>
+	<view class="bottom-content">
+		<image class="nodata-img" src="../../static/images/nodata.jpg"></image>
+	</view>
+</view>

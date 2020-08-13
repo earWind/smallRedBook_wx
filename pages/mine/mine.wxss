@@ -1,1 +1,78 @@
 /* pages/mine/mine.wxss */
+.top-info {
+  display: flex;
+  padding: 16rpx;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.self-info {
+  display: flex;
+}
+
+.top-info .data {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-info .top-count {
+  display: flex;
+  justify-content: space-around;
+  font-size: 28rpx;
+}
+
+.top-info .top-count .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-info .bottom-btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.top-info .bottom-btns button {
+  height: 64rpx;
+  border-radius: 64rpx;
+  line-height: 64rpx;
+}
+
+.top-info .bottom-btns .edit button {
+  width: 428rpx;
+}
+
+.self-bsc {
+  padding-top: 36rpx;
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+}
+
+.self-bsc .sex {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.self-bsc .split {
+  margin: 0 16rpx;
+}
+
+.self-bsc .join-vip {
+  color: #FF4259;
+  padding: 0 16rpx;
+  border: 1px solid #FF4259;
+  box-sizing: border-box;
+  border-radius: 16rpx;
+}
+
+.bottom-content {
+  background-color: #F5F8FA;
+  height: 100%;
+}
+
+.nodata-img {
+  width: 100%;
+}

@@ -1,1 +1,46 @@
 /* pages/mall/mall.wxss */
+.top-search-and-navs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 172rpx;
+  background-color: #fff;
+  z-index: 100000;
+  box-shadow: 0 1rpx 8rpx #C1C1C1;
+}
+
+.top-search-and-navs .van-search__content {
+  border-radius: 34rpx;
+}
+
+.top-search-and-navs .nav-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: #C1C1C1;
+  font-size: 28rpx;
+}
+
+.top-search-and-navs .nav-tabs .active {
+  color: black;
+  font-weight: bold;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  margin: 172rpx 0 0 0;
+  overflow: auto;
+}
+
+.shopping-cart {
+  color: #fff;
+  position: fixed;
+  bottom: 36rpx;
+  right: 36rpx;
+  font-size: 72rpx;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 16rpx;
+  border-radius: 52rpx;
+}

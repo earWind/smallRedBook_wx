@@ -1,4 +1,23 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
-<van-button type="primary">按钮</van-button>
-<van-icon name="close" />
+<view class="page-container">
+	<view class="top-search-and-navs">
+		<van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+		<view class="nav-tabs">
+			<text class="active">推荐</text>
+			<text>附近</text>
+			<text>时尚</text>
+			<text>护肤</text>
+			<text>彩妆</text>
+			<text>美食</text>
+			<text>旅行</text>
+		</view>
+	</view>
+	<view class="center-content">
+		<mp-waterfall id="waterfall" generic:item="waterfall-item" list="{{list || []}}" idKey="id" imageKey="imgUrl" colNum="2" gutter="5%" bind:loadingChange="onLoadingChange"></mp-waterfall>
+		<view class="load-tips">
+			<view wx:if="{{listDataLoading || waterfallLoading}}">加载中...</view>
+			<view wx:elif="{{loaded}}">加载完毕</view>
+		</view>
+	</view>
+	<image wx:if="{{loading}}" class="loading-gif" src="../../static/images/first-loading.gif"></image>
+</view>

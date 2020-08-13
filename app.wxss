@@ -1,10 +1,30 @@
 /**app.wxss**/
-.container {
+page {
   height: 100%;
+  overflow: auto;
+}
+
+.page-container {
+  height: 100%;
+  overflow: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
+  padding: 0;
   box-sizing: border-box;
-} 
+  color: #bebebe;
+}
+
+.load-tips {
+  text-align: center;
+  line-height: 2;
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.5;
+  padding: 20rpx 0;
+}
+
+.loading-gif {
+  position: fixed;
+  top: 172rpx;
+  width: 100%;
+}

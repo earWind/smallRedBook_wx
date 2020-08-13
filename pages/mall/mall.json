@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "商城",
+  "usingComponents": {
+    "mp-waterfall": "../../components/mp-waterfall",
+    "waterfall-item": "../../components/waterfall-item"
+  }
 }

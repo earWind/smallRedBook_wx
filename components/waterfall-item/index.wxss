@@ -1,0 +1,32 @@
+/* components/waterfall-item/waterfall-item.wxss */
+.w-item {
+  overflow: hidden;
+  line-height: 1;
+  font-size: 0;
+  margin-bottom: 20rpx;
+  animation: zoomIn 1s 0s;
+  border-radius: 10rpx;
+  background-color: #f7f7f7;
+}
+.w-text{
+  font-size: 24rpx;
+  line-height: 1.5;
+  word-break: break-all;
+  padding: 20rpx 10rpx;
+  color: #222;
+}
+.w-image {
+  width: 100%;
+  vertical-align: top;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
