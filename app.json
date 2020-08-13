@@ -1,14 +1,51 @@
 {
-  "pages":[
+  "pages": [
+    "pages/home/home",
+    "pages/mall/mall",
+    "pages/mine/mine",
     "pages/index/index",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "小红书",
+    "navigationBarTextStyle": "black"
   },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "tabBar": {
+    "color": "#9E9E9E",
+    "selectedColor": "#2C2C2C",
+    "list": [{
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/images/tabBar_home.png",
+        "selectedIconPath": "static/images/tabBar_home_s.png"
+      },
+      {
+        "pagePath": "pages/mall/mall",
+        "text": "商城",
+        "iconPath": "static/images/tabBar_small.png",
+        "selectedIconPath": "static/images/tabBar_small_s.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "static/images/tabBar_mine.png",
+        "selectedIconPath": "static/images/tabBar_mine_s.png"
+      }
+    ],
+    "sitemapLocation": "sitemap.json"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ],
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-icon": "@vant/weapp/icon/index"
+  }
 }
