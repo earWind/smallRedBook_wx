@@ -2,7 +2,8 @@
   "pages": [
     "pages/home/home",
     "pages/mall/mall",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/shopCar/shopCar"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -49,5 +50,5 @@
     "van-search": "@vant/weapp/search/index",
     "van-image": "@vant/weapp/image/index"
   },
-  "sitemapLocation": "sitemap30.json"
+  "sitemapLocation": "sitemap.json"
 }

@@ -19,6 +19,6 @@
 			<view wx:elif="{{loaded}}">加载完毕</view>
 		</view>
 	</view>
-  <van-icon class="shopping-cart" name="shopping-cart-o" />
+  <van-icon bindtap="toShopCar" class="shopping-cart" name="shopping-cart-o" />
 	<image wx:if="{{loading}}" class="loading-gif" src="../../static/images/first-loading.gif"></image>
 </view>

@@ -39,6 +39,9 @@
 		</van-tabs>
 	</view>
 	<view class="bottom-content">
-		<image class="nodata-img" src="../../static/images/nodata.jpg"></image>
+		<view class="nodata-tips">
+			<image class="nodata-img" src="../../static/images/nodata.png"></image>
+			<text>还没有笔记哦</text>
+		</view>
 	</view>
 </view>
